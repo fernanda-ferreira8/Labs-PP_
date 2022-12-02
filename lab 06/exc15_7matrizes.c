@@ -4,7 +4,6 @@ modo a não ter números repetidos dentro das cartelas. O programa deve exibir n
 cartela gerada.*/
 
 #include <stdio.h>
-#include <conio.h>
 #include <time.h>
 
 int main()
