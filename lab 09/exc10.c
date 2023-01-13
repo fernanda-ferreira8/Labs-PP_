@@ -6,7 +6,7 @@ leia esse array do teclado e imprima o dobro de cada valor lido. */
 int main(){
 
     int vetor[5];
-    int i, *pont; // vai p pqp
+    int i, *pont; 
 
     pont = &vetor;
 
