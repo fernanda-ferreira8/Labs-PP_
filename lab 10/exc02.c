@@ -6,25 +6,26 @@ dinâmica de memória. Em seguida, leia do usuário seus valores e imprima o vet
 
 int main()
 {
-    int *vetor, tamanho, i;
 
-    printf("Digite o tamanho do vetor aqui: ");
-    scanf("%d", &tamanho);
+  int *vetor, tamanho, i;
 
-    vetor = (int*)malloc(sizeof(int*) * tamanho);
+  printf("Digite o tamanho do vetor aqui:\n");
+  scanf("%d", &tamanho);
 
-    for (i = 0; i < tamanho; i++)
-    {
-        printf("Digite com um valor para posicao [%d] aqui: ", i);
-        scanf("%d", &vetor[i]);
-    }
+  vetor = (int *)malloc(sizeof(int) * tamanho);
+
+  for (i = 0; i < tamanho; i++)
+  {
+
+    printf("Digite um valor para a posicao [%d] aqui:\n", i);
+    scanf("%d", &vetor[i]);
+  }
+  for (i = 0; i < tamanho; i++)
+  {
+    printf("%d |", vetor[i]);
+  }
+
+  free(vetor);
     
-    for (i = 0; i < tamanho; i++)
-    {
-        printf(" %d |", vetor[i]);
-    }
-
-    free(vetor);
-    
-    return 0;
+  return 0;
 }
