@@ -8,10 +8,10 @@ int main()
 
   int numero;
 
-  printf("Digite um nmr\n");
+  printf("Digite um numero aqui\n");
   scanf("%d", &numero);
 
-  printf("Seu numero é: %d", numero);
+  printf("Seu numero eh: %d", numero);
 
   return 0;
 }
